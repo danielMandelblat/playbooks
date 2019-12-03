@@ -6,15 +6,12 @@
       shell: df -h
       register: out
 
-    - debug: var=out.stdout_lines
     
     
     - name: free ram usage
       shell: free -h
       register: out
 
-    - debug: var=out.stdout_lines
-    
     
     - name: ip address
       shell: ifconfig
