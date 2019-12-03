@@ -2,7 +2,7 @@
 - name: print server idle
   hosts: all
   tasks:
-    - name: servers disk usage
+    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
       shell: df -h
       register: out
 
